@@ -40,6 +40,15 @@ public class User {
         this.roles = new HashSet<>();
     }
 
+    public User(String username, String password, String email, String fullName, int age) {
+        this();
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.fullName = fullName;
+        this.age = age;
+    }
+
     public long getId() {
         return id;
     }
